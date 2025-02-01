@@ -10,11 +10,11 @@ import Navbar from './components/Navbar'
 
 function App() {
   const [apiKey, setApiKey] = useState("");
-  // console.log(apiKey);
+
 
   useEffect(() => {
     const storedApiKey = localStorage.getItem("apiKey");
-    console.log("Retrieved API Key:", storedApiKey);
+    
     if (storedApiKey) {
       setApiKey(storedApiKey);
     }
